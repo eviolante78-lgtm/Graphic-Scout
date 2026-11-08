@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e2328"/><stop offset="1" stop-color="#0c0e10"/></linearGradient>
+    <radialGradient id="ball" cx="0.38" cy="0.30" r="0.85"><stop offset="0" stop-color="#ffa04a"/><stop offset="0.45" stop-color="#f06a12"/><stop offset="0.8" stop-color="#c2490a"/><stop offset="1" stop-color="#8a2f04"/></radialGradient>
+    <radialGradient id="edge" cx="0.5" cy="0.5" r="0.5"><stop offset="0.62" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.38"/></radialGradient>
+    <radialGradient id="hi" cx="0.33" cy="0.26" r="0.45"><stop offset="0" stop-color="#fff" stop-opacity="0.42"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <pattern id="peb" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="2.2" cy="2.2" r="1.15" fill="#000" fill-opacity="0.16"/><circle cx="6.7" cy="6.7" r="1.15" fill="#000" fill-opacity="0.16"/></pattern>
+    <clipPath id="bc"><circle cx="240" cy="290" r="150"/></clipPath>
+    <filter id="blur" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
+    <linearGradient id="penB" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d7dee4"/><stop offset="0.35" stop-color="#ffffff"/><stop offset="0.7" stop-color="#f4f7f9"/><stop offset="1" stop-color="#c6cfd7"/></linearGradient>
+    <linearGradient id="penT" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cfd7de"/><stop offset="0.4" stop-color="#ffffff"/><stop offset="1" stop-color="#bcc6cf"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g transform="translate(256 256) scale(0.78) translate(-316 -209)">
+    <ellipse cx="240" cy="452" rx="115" ry="14" fill="#000" opacity="0.45" filter="url(#blur)"/>
+    <circle cx="240" cy="290" r="150" fill="url(#ball)"/>
+    <circle cx="240" cy="290" r="150" fill="url(#peb)"/>
+    <g clip-path="url(#bc)" fill="none" stroke="#24120a" stroke-width="8.5" stroke-linecap="round">
+      <path d="M240 130 V450"/><path d="M80 290 H400"/>
+      <path d="M140 150 Q212 290 140 430"/><path d="M340 150 Q268 290 340 430"/>
+    </g>
+    <circle cx="240" cy="290" r="150" fill="url(#edge)"/>
+    <circle cx="240" cy="290" r="150" fill="url(#hi)"/>
+    <g transform="translate(356 174) rotate(40)">
+      <path d="M0 0 Q-2.5 -4 -4 -14 L-16 -66 L16 -66 L4 -14 Q2.5 -4 0 0 Z" fill="url(#penT)"/>
+      <path d="M-16 -66 L16 -66" stroke="#c3ccd4" stroke-width="2"/>
+      <path d="M-16 -66 L-16 -274 Q-16 -290 0 -290 Q16 -290 16 -274 L16 -66 Z" fill="url(#penB)"/>
+      <path d="M-16 -120 L16 -120" stroke="#e1e7ec" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
